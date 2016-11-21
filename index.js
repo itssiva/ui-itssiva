@@ -6,6 +6,6 @@ function Component(props) {
 }
 
 render(
-  <Component />
+  <Component />,
   document.getElementById('app')
 );
