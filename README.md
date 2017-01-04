@@ -1,3 +1,3 @@
-This is my version of a react-starter kit.
+This is the repo for the frontend of my website.
 
-Will update this doc specifying how each dependemcy is useful.
+I plan to make it completely a React JS website.
