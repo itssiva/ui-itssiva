@@ -1,11 +1,13 @@
 import React from 'react';
 import {render} from 'react-dom';
+import Header from './components/header/'
 
-function Component(props) {
-  return <div>Hello World!</div>
-}
 
 render(
-  <Component />,
+  (<div>
+    <Header/>
+  </div>),
   document.getElementById('app')
 );
+
+
