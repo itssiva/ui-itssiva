@@ -3,7 +3,8 @@
 import React, { PropTypes } from 'react';
 import { render } from 'react-dom';
 
-const Name = ({ firstName, lastName }) => {
+const Name = ({ name }) => {
+  let { firstName, lastName } = name;
   let nameStyle = {
     color: "navy",
     lineHeight: 2,
