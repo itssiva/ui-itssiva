@@ -3,13 +3,14 @@
 import React, { PropTypes } from 'react';
 import { render } from 'react-dom';
 
-const Address = ({street, houseNo, city, state, country, zipcode}) => {
+const Address = ({ address }) => {
+  let { street, city, state, country, zipcode } = address;
   let addressStyle = {
     color: "navy",
     textAlign: "center",
   }
 
-  return <div style={addressStyle}>{street}, #{houseNo}. {city}. {state}. {country}. {zipcode}</div>
+  return <div style={addressStyle}>{street}, {city}. {state}. {country}. {zipcode}</div>
 }
 
 
