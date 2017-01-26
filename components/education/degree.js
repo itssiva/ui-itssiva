@@ -6,13 +6,9 @@ const Degree = ({ degree }) => {
   console.log('Received are ', level, major, schoolName, location, startYear, endYear);
   return (
     <li>
-      <ol>
-        <li>{level}</li>
-        <li>{major}</li>
-        <li>{schoolName}</li>
-        <li>{location}</li>
-        <li>{startYear} - {endYear}</li>
-      </ol>
+        <div>{level} in {major} ({startYear} - {endYear})</div>
+        <div>{schoolName}</div>
+        {location}
     </li>
   )
 }
