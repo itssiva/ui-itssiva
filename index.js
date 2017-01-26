@@ -3,12 +3,30 @@ import {render} from 'react-dom';
 import Header from './components/header/';
 import Education from './components/education/'
 
-let educationDegrees = [
+const contactDetails = {
+  mobileNo: "(980) 729-1375",
+  email: "sivaponugoti@gmail.com",
+};
+
+const name = {
+  firstName: "Siva",
+  lastName: "Ponugoti",
+};
+
+const address = {
+  street: "39900 Blacow Rd",
+  city: "Fremont",
+  state: "CA",
+  country: "USA",
+  zipcode: "94538",
+};
+
+const educationDegrees = [
   {
     level: "Masters",
     major: "Computer Science",
     schoolName: "University of North Carolina at Charlotte",
-    location: "NC, USA",
+    location: "Charlotte, NC, USA",
     startYear: 2014,
     endYear: 2015,
   },
@@ -22,9 +40,10 @@ let educationDegrees = [
   },
 ]
 
+
 render(
   (<div>
-    <Header />
+    <Header name={name} contactDetails={contactDetails} address={address}/>
     <Education educationDegrees={educationDegrees}/>
 
   </div>),
