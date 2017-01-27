@@ -2,6 +2,7 @@ import React from 'react';
 import {render} from 'react-dom';
 import Header from './components/header/';
 import Education from './components/education/'
+import WorkExperience from './components/workExperience/'
 
 const contactDetails = {
   mobileNo: "(980) 729-1375",
@@ -40,12 +41,37 @@ const educationDegrees = [
   },
 ]
 
+const workExperience = [
+  {
+    title: "Software Engineer Trainee",
+    company: "Infosys Technologies Ltd.",
+    location: {
+      city: "Mysore",
+      state: "Karnataka",
+      country: "India",
+    },
+    "from": "05-2014",
+    "to": "07-2014",
+  },
+  {
+    title: "Software Engineer",
+    company: "Yewno Inc.",
+    location: {
+      city: "Redwood City",
+      state: "CA",
+      country: "USA",
+    },
+    "from": "04-2016",
+  }
+]
+
+
 
 render(
   (<div>
-    <Header name={name} contactDetails={contactDetails} address={address}/>
-    <Education educationDegrees={educationDegrees}/>
-
+    <Header name={name} contactDetails={contactDetails} address={address} />
+    <Education educationDegrees={educationDegrees} />
+    <WorkExperience workExperience={workExperience} />
   </div>),
   document.getElementById('app')
 );
